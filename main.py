@@ -14,8 +14,6 @@ def save_sp500_tickers():
         ticker = row.findAll('td')[0].text.rstrip("\n")
         tickers.append(ticker)
 
-    print(tickers)
-
     return tickers
 
 tickers = save_sp500_tickers()
